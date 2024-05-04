@@ -1,5 +1,169 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-.page {
+.page{
+  background-color: var(--main-color);
+  background-attachment: fixed;
+  min-width: 375px;
+  max-width: 1440px;
+  font-family: var(--font-family), sans-serif;
+  background-attachment: fixed;
+  margin: 0 auto;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+@media (width >= 768px) and (width <= 1024px){
+  .page{
+   
+  }
+}
+
+@media (width >= 1024px){
+  .page{
+    
+  }
+}
+.special-text{
+  text-decoration: none;
+  color: var(--text-color);
+  text-shadow: 1px 1px  var(--accent-color);
+}
+
+.header{
+  background-image: var(--background-image);
+  display: grid;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-template-rows: 1fr min-content 1fr;
+}
+
+.header__rec{
+  content: "";
+  color: var(--accent-color);
+  justify-self: end;
+  position: absolute;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color) ;
+}
+
+.dot{
+  
+}
+
+.header__theme-menu{
+  display: flex;
+  justify-self: end;
+}
+
+.header__theme-menu-button{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  border: transparent;
+  color: var(--accent-color);
+}
+
+.header__theme-menu-button:hover{
+  outline: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+.header__theme-menu-button:focus-visible{
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+}
+
+.header__theme-menu-list{
+  list-style: none;
+}
+
+.header__title{
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  color: var(--shadow-color);
+  text-shadow: 4px 4px 0  var(--accent-color);
+}
+
+
+.header__text{
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+}
+
+.title-decor{
+  background-color: var(--accent-color);
+}
+
+.section__title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--main-color);
+}
+
+.paragraph-title{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--main-color);
+}
+
+.content__text{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--text-color);
+}
+
+.content-list{
+  list-style: none;
+  display: grid;
+
+}
+
+.section__item{
+  
+}
+.content__title{
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--accent-color);
+}
+
+.footer{
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.images-section{
+  min-width: 375px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+@media (768 >= width) and {
+  .images-section{
+    min-width: 768px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+.image{
+  width: 100%;
 }

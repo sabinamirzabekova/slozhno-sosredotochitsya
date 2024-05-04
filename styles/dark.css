@@ -10,3 +10,14 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+:root.theme_dark{
+  --shadow-color: #db00ff;
+  --main-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --font-family: "IBM Plex Mono";
+  --background-image: url(/images/cover-image-dark.png)
+}
+
+
