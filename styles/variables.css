@@ -5,7 +5,9 @@
 :root{
   --shadow-color: #db00ff;
   --main-color: #000028;
+  --second-title-color: #000028;
   --text-color: #f1b2ce;
+  --title-color: #ff0070;
   --accent-color: #ff0070;
   --font-family: 'IBM Plex mono';
   --background-image: url(/images/cover-image-dark.png);

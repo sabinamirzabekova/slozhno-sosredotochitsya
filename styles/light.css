@@ -21,6 +21,8 @@
   --shadow-color: #ff0070;
   --main-color: #ffc2e6;
   --text-color: #353430;
+  --second-title-color: #353430;
+  --title-color: #353430;
   --accent-color: #ff8dcb;
   --font-family: "IBM Plex Mono";
   --background-image: url(/images/cover-image-light.png);
@@ -31,6 +33,8 @@
     --shadow-color: #ff0070;
     --main-color: #ffc2e6;
     --text-color: #353430;
+    --second-title-color: #353430;
+    --title-color: #353430;
     --accent-color: #ff8dcb;
     --font-family: "IBM Plex Mono";
     --background-image: url(/images/cover-image-light.png);
