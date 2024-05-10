@@ -14,8 +14,6 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <span class="header__rec">
-        REC<span class="dot"></span></span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -45,11 +43,11 @@
       <h1 class="header__title">no focus</h1>
       <p class="header__text title-decor">Что делать, когда не можешь делать ничего<br>
         Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
-      
+        <span class="header__rec">REC</span><span class="border"></span>
     </header>
     <main class="main">
       <div class="section-first ">
-        <h1 class="content__title">Почему сосредоточиться так сложно</h1>
+        <h2 class="content__title">Почему сосредоточиться так сложно</h2>
         <ul class="content-list">
           <li class="section__item">
             <h2 class="title-decor section__title">Многозадачность</h2>
@@ -109,13 +107,13 @@
         </li>
       </ul>
       </div>
-      <div class="section-first">
-      <h1 class="content__title">Как концентрироваться лучше, чем золотая рыбка (то 
-        есть дольше трёх секунд)</h1>
+      <div class="section-first content__concentration-fish">
+        <h2 class="content__title content__concentration-fish-title">Как концентрироваться лучше, чем золотая рыбка (то 
+        есть дольше трёх секунд)</h2>
       <div>
       <h2 class="title-decor section__title">5 простых (на самом деле не очень) советов</h2>
       <ul class="content-list">
-        <li>
+        <li class="item">
           <h2 class="paragraph-title title-decor">Представьте небо и облака</h2>
           <p class="content__text">Или листья в ручье. Тут дело в лёгкой медитации, которая 
             помогает успокоиться. Ведь часто именно тревожные мысли о сложных 
@@ -126,7 +124,7 @@
             упражнение поможет вернуться в настоящий момент, а не волноваться о 
             потенциальных проблемах из будущего.</p>
         </li>
-        <li>
+        <li class="item">
           <h2 class="paragraph-title title-decor">Включите музыку</h2>
           <p class="content__text">Но не любую, и не любимую. Любимая может быть связана с 
             сильными положительными эмоциями, которые тоже очень сильно 
@@ -134,7 +132,7 @@
             вообще попробовать включить плейлист в «белым шумом» или 
             нейромузыкой.</p>
         </li>
-        <li>
+        <li class="item">
           <h2 class="paragraph-title title-decor">Прогуляйтесь</h2>
           <p class="content__text">Или даже пробегитесь. Лучше найти парк или лес: 
             один эксперимент показал, что созерцание природы повышает 
@@ -144,7 +142,7 @@
             и он будет лучше работать. Но и простая двадцатиминутная 
             прогулка — тоже отличный вариант.</p>
         </li>
-        <li>
+        <li class="item">
           <h2 class="paragraph-title title-decor">Хорошо ешьте</h2>
           <p class="content__text">Мы — не ваша бабушка, но это правда важно. Выбирайте 
             продукты, которые препятствуют резким скачкам сахара в крови. 
@@ -164,7 +162,7 @@
       </div>
     </div>
     <div class="content__image">
-    <h2 class="title-decor">А можно в картинках?</h2>
+    <h2 class="title-decor section__title">А можно в картинках?</h2>
       <div class="images-section">
         <img class="image sunset" src="/images/sunset.png" alt="закат солнца" loading="lazy">
         <img class = "image ice-cream" src="/images/ice-cream.png" alt="рисунок мороженого из смешных котят" loading="lazy">
@@ -173,10 +171,11 @@
         <img class = "image street" src="/images/street.png" alt="улица" loading="lazy">
       </div>
     </div>
-      <footer class="footer">
-        <h1 class="header__title">focus</h1>
-      </footer>
-    </main>
+    </main>    
+    <footer class="footer">
+      <span class="border"></span>
+      <h2 class="footer__title">focus</h2>    
+    </footer>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
