@@ -3,15 +3,6 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme_light{
-  --shadow-color: #ff0070;
-  --main-color: #ffc2e6;
-  --text-color: #353430;
-  --accent-color: #ff8dcb;
-  --font-family: "IBM Plex Mono";
-  --background-image: url(/images/cover-image-light.png);
-}
-
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
@@ -27,8 +18,19 @@
   --border-color: #353430;
   --font-family: "IBM Plex Mono";
   --background-image: url(/images/cover-image-light.png);
+  .header__rec{
+    display: none;
+  }
+  .header__theme-menu-button:hover {
+    outline: 1px solid #32312D66;
+  }
+  .header__theme-menu-button_active{
+    outline: 1px solid rgba(50, 49, 45, 0.4);
+    pointer-events: none;
+  }
 }
-@media (prefers-color-schreme: light){
+
+@media (prefers-color-scheme: light) {
   :root{
     --shadow-color: #ff0070;
     --main-color: #ffc2e6;
@@ -40,13 +42,14 @@
     --font-family: "IBM Plex Mono";
     --background-image: url(/images/cover-image-light.png);
   }
-}
-@media (prefers-color-schreme: light){
-}
-.page.theme_light  .header__rec{
-    opacity: 0 ;
-}
-
-.page.theme_light .header__theme-menu-button:hover{
-  outline: 1px solid var(--border-color);
+  .header__rec{
+    display: none;
+  }
+  .header__theme-menu-button:hover {
+    outline: 1px solid rgba(50, 49, 45, 0.4);
+  }
+  .header__theme-menu-button_active{
+    outline: 1px solid rgba(50, 49, 45, 0.4);
+    pointer-events: none;
+  }
 }
